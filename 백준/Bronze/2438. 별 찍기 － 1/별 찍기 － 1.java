@@ -6,12 +6,12 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		
 		int num = sc.nextInt();
-		
-		for(int i = 0; i < num; i++) {
-			for(int j = 0; j < i; j++) {
-				System.out.print("*");
-			}
-			System.out.println("*");
+
+		StringBuilder sb = new StringBuilder();
+		for(int i = 1; i <= num; i++) {
+			sb.append("*".repeat(i)).append("\n");
 		}
-	}
+		System.out.println(sb.toString());
+		sc.close();
+	}	
 }
